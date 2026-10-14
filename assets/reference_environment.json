@@ -1,0 +1,55 @@
+{
+  "packages": {
+    "torch": "2.11.0+cu128",
+    "diffusers": "0.39.0",
+    "cupy-cuda12x": "13.6.0",
+    "numpy": "1.26.4",
+    "scipy": "1.17.1",
+    "matplotlib": "3.11.1"
+  },
+  "python": "3.12.3 | packaged by Anaconda, Inc. | (main, May  6 2024, 19:46:43) [GCC 11.2.0]",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "torch_cuda": "12.8",
+  "deterministic": true,
+  "seed": 42,
+  "source_sha256": {
+    "dlo/__init__.py": "fee22526b70b48ff1c8c4d3b926793a5629e552c3bc4760c9ac51f44f796c5ab",
+    "dlo/io.py": "60cb8b3c7db6042cdfbd450ede4b540bf42cf25bb9642d5c81d4b830fc0e8773",
+    "dlo/metrics.py": "3ed2578acc628b7d2f20cbf6408b91a653129dfd8836996a437a568f01871efb",
+    "dlo/prior.py": "249bb6dc3134c6d68be08b7ac5ffd4e35abcab8e2120a7d9d89bf978c89c80b6",
+    "dlo/solver.py": "abb05018d71a3b58e4c0f0d9083d001c8ba950880a9d6b4b81a861705ec14ab3",
+    "dlo/unet.py": "6433e6fc08388fe6839b75e546bd859cc83712ddc0bf9f8f4a14eff0b5f3850e",
+    "dlo/wave_solver.py": "625808fa2dde95ee2d9412ad013da23e78da0fc1697f36deafd1f59cad494787"
+  },
+  "post_validation_formatting": {
+    "file": "dlo/wave_solver.py",
+    "change": "Trailing whitespace only, including one CUDA string; AST otherwise identical.",
+    "release_file_sha256": "974e4449207f54690b7357f778c6f5a35d5e6af1bf67758f67df1e15243f7abb"
+  },
+  "dataset_rerun_environments": {
+    "CurveVel-B": {
+      "packages": {
+        "torch": "2.11.0+cu128",
+        "diffusers": "0.39.0",
+        "cupy-cuda12x": "13.6.0",
+        "numpy": "1.26.4",
+        "scipy": "1.17.1",
+        "matplotlib": "3.11.1"
+      },
+      "python": "3.12.3 | packaged by Anaconda, Inc. | (main, May  6 2024, 19:46:43) [GCC 11.2.0]",
+      "gpu": "NVIDIA GeForce RTX 5090",
+      "torch_cuda": "12.8",
+      "deterministic": true,
+      "seed": 42,
+      "source_sha256": {
+        "dlo/__init__.py": "fee22526b70b48ff1c8c4d3b926793a5629e552c3bc4760c9ac51f44f796c5ab",
+        "dlo/io.py": "60cb8b3c7db6042cdfbd450ede4b540bf42cf25bb9642d5c81d4b830fc0e8773",
+        "dlo/metrics.py": "3ed2578acc628b7d2f20cbf6408b91a653129dfd8836996a437a568f01871efb",
+        "dlo/prior.py": "249bb6dc3134c6d68be08b7ac5ffd4e35abcab8e2120a7d9d89bf978c89c80b6",
+        "dlo/solver.py": "abb05018d71a3b58e4c0f0d9083d001c8ba950880a9d6b4b81a861705ec14ab3",
+        "dlo/unet.py": "6433e6fc08388fe6839b75e546bd859cc83712ddc0bf9f8f4a14eff0b5f3850e",
+        "dlo/wave_solver.py": "974e4449207f54690b7357f778c6f5a35d5e6af1bf67758f67df1e15243f7abb"
+      }
+    }
+  }
+}

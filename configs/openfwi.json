@@ -1,0 +1,14 @@
+{
+  "seed": 42,
+  "initialization_sigma": 10.0,
+  "normalization": {"center_m_s": 3000.0, "scale_m_s": 1500.0},
+  "methods": {
+    "fwi": {"n_iters": 300, "lr_v": 0.03, "reg_lambda": 0.0, "cosine_decay": false},
+    "tv_fwi": {"n_iters": 300, "lr_v": 0.03, "reg_lambda": 0.01, "cosine_decay": false},
+    "tikhonov_fwi": {"n_iters": 300, "lr_v": 0.03, "reg_lambda": 0.01, "cosine_decay": false},
+    "red_diffeq": {"n_iters": 300, "lr_v": 0.03, "reg_lambda": 0.75, "sigma_x0": 0.0001, "cosine_decay": true},
+    "dlo": {"n_iters": 300, "lr_v": 0.03, "lr_z": 0.02, "reg_lambda": 0.5, "ddim_steps": 3, "cosine_decay": false}
+  },
+  "diffusion": {"num_train_timesteps": 1000, "beta_start": 0.0001, "beta_end": 0.02, "beta_schedule": "linear", "prediction_type": "epsilon", "clip_sample": false},
+  "acquisition": {"grid": [70, 70], "dx_m": 10, "dt_s": 0.001, "time_samples": 1000, "source_frequency_hz": 15, "source_x_cells": [0, 17, 34, 52, 69], "source_depth_cells": 1, "receivers": 70, "receiver_depth_cells": 1, "absorbing_boundary_cells": 120}
+}

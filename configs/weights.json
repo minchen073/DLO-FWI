@@ -1,0 +1,30 @@
+{
+  "release_tag": "v0.1.0",
+  "repository": "minchen073/DLO-FWI",
+  "models": {
+    "FlatVel-B": {
+      "asset": "FlatVel-B_model.pt",
+      "path": "FlatVel-B/model.pt",
+      "bytes": 275260235,
+      "sha256": "928266dde1bc60139b15e8309cb93905ab0dbb6ea3783bcd5d3349c63b485790"
+    },
+    "FlatFault-B": {
+      "asset": "FlatFault-B_model.pt",
+      "path": "FlatFault-B/model.pt",
+      "bytes": 275259842,
+      "sha256": "10931f42301e0c449411a65498579f4d73231f68f6838559fdb99a0250463248"
+    },
+    "CurveVel-B": {
+      "asset": "CurveVel-B_model.pt",
+      "path": "CurveVel-B/model.pt",
+      "bytes": 275259842,
+      "sha256": "6735357d911cc36da4950c170b6164577c49ba777d474b0e84df4fd377169868"
+    },
+    "CurveFault-B": {
+      "asset": "CurveFault-B_model.pt",
+      "path": "CurveFault-B/model.pt",
+      "bytes": 275260235,
+      "sha256": "0f3a9fccff89a2786fa53472e8affd6222478bd78d9679146d9e669cb30bfc36"
+    }
+  }
+}

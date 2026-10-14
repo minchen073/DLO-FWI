@@ -1,0 +1,76 @@
+{
+  "description": "Four selected OpenFWI demonstration samples; indices are zero based.",
+  "data_license": "CC-BY-NC-SA-4.0",
+  "source": "https://openfwi-lanl.github.io/",
+  "initialization": "scipy.ndimage.gaussian_filter((velocity_true-3000)/1500, sigma=10, mode=reflect), then *1500+3000",
+  "datasets": {
+    "FlatVel-B": {
+      "file": "FlatVel-B.npz",
+      "source_velocity_file": "model60.npy",
+      "source_seismic_file": "data60.npy",
+      "index": 72,
+      "sha256": "c255a1b6d396d192bba1b0d87c32a01e302f8d4c4d3261a0ca8537464a1dfcb1",
+      "velocity_unit": "m/s",
+      "velocity_shape": [
+        70,
+        70
+      ],
+      "seismic_shape": [
+        5,
+        1000,
+        70
+      ]
+    },
+    "FlatFault-B": {
+      "file": "FlatFault-B.npz",
+      "source_velocity_file": "vel6_1_35.npy",
+      "source_seismic_file": "seis6_1_35.npy",
+      "index": 0,
+      "sha256": "c61ca73e258f3965fdd57942b9030170fa101d9e3c7cb51ab437252968d1e99f",
+      "velocity_unit": "m/s",
+      "velocity_shape": [
+        70,
+        70
+      ],
+      "seismic_shape": [
+        5,
+        1000,
+        70
+      ]
+    },
+    "CurveVel-B": {
+      "file": "CurveVel-B.npz",
+      "source_velocity_file": "model60.npy",
+      "source_seismic_file": "data60.npy",
+      "index": 30,
+      "sha256": "e43b036850c3e9cf4bf9068649733214db033174059b28803791bdfb45351fa7",
+      "velocity_unit": "m/s",
+      "velocity_shape": [
+        70,
+        70
+      ],
+      "seismic_shape": [
+        5,
+        1000,
+        70
+      ]
+    },
+    "CurveFault-B": {
+      "file": "CurveFault-B.npz",
+      "source_velocity_file": "vel6_1_35.npy",
+      "source_seismic_file": "seis6_1_35.npy",
+      "index": 21,
+      "sha256": "6eab9949c65af240a46e1b782ceb19e110b78dea805f1b662adfab4e0c632cae",
+      "velocity_unit": "m/s",
+      "velocity_shape": [
+        70,
+        70
+      ],
+      "seismic_shape": [
+        5,
+        1000,
+        70
+      ]
+    }
+  }
+}

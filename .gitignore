@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+checkpoints/
+release_assets/
+outputs/
+validation/
+dist/
+*.pt
+*.pth
+*.log

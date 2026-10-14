@@ -1,0 +1,67 @@
+{
+  "full_runs": 20,
+  "iterations_per_run": 300,
+  "all_reconstruction_arrays_finite": true,
+  "all_histories_have_301_states": true,
+  "velocity_range_m_s": [
+    1500,
+    4500
+  ],
+  "shared_config": "configs/openfwi.json",
+  "unit_tests_passed": 4,
+  "gpu_checks": {
+    "real_prior_cached_vs_recomputed_max_abs_m_s": 0.0,
+    "real_prior_histories_identical": true,
+    "adjoint_directional_checks": [
+      {
+        "epsilon_m_s": 0.1,
+        "finite_difference": -0.00372497566000626,
+        "adjoint": -0.0037691593170166016,
+        "relative_error": 0.01172241693548638
+      },
+      {
+        "epsilon_m_s": 0.3,
+        "finite_difference": -0.003786060700440806,
+        "adjoint": -0.0037691593170166016,
+        "relative_error": 0.004464107884545176
+      },
+      {
+        "epsilon_m_s": 1.0,
+        "finite_difference": -0.003776338741812213,
+        "adjoint": -0.0037691593170166016,
+        "relative_error": 0.0019011601676829693
+      }
+    ]
+  },
+  "original_implementation_cpu_comparison": {
+    "metrics_max_abs_difference": 0.0,
+    "baseline_velocity_max_abs_difference_m_s": {
+      "fwi": 0.001220703125,
+      "tv_fwi": 0.001220703125,
+      "tikhonov_fwi": 0.00146484375,
+      "red_diffeq": 0.00341796875
+    }
+  },
+  "weight_downloader": {
+    "offline_all_four_install_passed": true,
+    "corrupt_asset_rejected": true,
+    "partial_files_cleaned": true
+  },
+  "clean_environment_status": "passed: extracted standalone source, all five methods for 3 iterations, 4 unit tests, dependency check",
+  "scope": "Four selected demonstration samples, not aggregate paper results; DLO uses manuscript v-then-z order and fixed lambda from the first update.",
+  "clean_environment_packages": 62,
+  "cuda_installation_provenance": "Two same-version CUDA distributions installed from locally reconstructed wheels after verifying installed RECORD hashes; remaining distributions installed through the package indexes.",
+  "classical_methods_run_without_weights": true,
+  "final_formatted_operator_rechecked_in_clean_environment": true,
+  "paper_example_alignment": {
+    "all_four_ground_truth_models_matched": true,
+    "zero_based_indices": {
+      "FlatVel-B": 72,
+      "FlatFault-B": 0,
+      "CurveVel-B": 30,
+      "CurveFault-B": 21
+    },
+    "curvevel_b_five_methods_rerun": true,
+    "iterations_per_rerun": 300
+  }
+}
