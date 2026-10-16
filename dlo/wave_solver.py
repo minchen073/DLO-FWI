@@ -819,7 +819,10 @@ class SeismicMasterForwardModelingFunction(torch.autograd.Function):
             adjoint_on_residual=False,
         )
 
-        velocity_grad = adjoint_grad[:-1, 0]
+        minimum_mask = velocity_cp == min_vel
+        minimum_count = cp.count_nonzero(minimum_mask)
+        velocity_grad = adjoint_grad[:-1, 0].copy()
+        velocity_grad += (adjoint_grad[-1, 0] / minimum_count) * minimum_mask.ravel()
         velocity_grad_reshaped = velocity_grad.reshape(velocity_2d.shape)
 
         if velocity_tensor.device.type == 'cuda':
